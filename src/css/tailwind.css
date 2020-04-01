@@ -1,0 +1,82 @@
+@tailwind base;
+
+@tailwind components;
+
+.btn-blue {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.btn-red {
+    @apply bg-red-800 text-white font-bold py-2 px-4 rounded;
+}
+.btn-red:hover {
+    @apply bg-red-900;
+}
+
+.alert {
+    @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 m-32;
+}
+.alert-warning {
+    @apply bg-yellow-100 text-yellow-700 border-yellow-500;
+}
+.alert-info {
+    @apply bg-indigo-100 text-indigo-700 border-indigo-500;
+}
+.alert-danger {
+    @apply bg-red-100 text-red-700 border-red-500;
+}
+.alert-success {
+    @apply bg-green-100 text-green-700 border-green-500;
+}
+
+.form-control {
+    @apply w-full border border-blue-200 bg-gray-200 py-2 px-4 rounded text-gray-800 leading-snug text-xl;
+}
+
+.form-control:focus {
+    @apply outline-none shadow-outline;
+}
+
+.btn {
+    @apply block bg-gray-500 text-gray-800 shadow-lg py-3 px-6 rounded mx-auto my-4;
+}
+
+.btn:hover {
+    @apply bg-gray-700 text-white outline-none;
+}
+
+.btn:focus {
+    @apply bg-gray-700 text-white outline-none;
+}
+
+@tailwind utilities;
+
+
+/* .rotate {
+    transform: rotate(30deg);
+} */
+
+@responsive {
+    .rotate {
+        transform: rotate(45deg);
+    }
+}
+
+
+@variants hover {
+    .zoom {
+        transform: scale(2);
+        transition: all .3s;
+    }
+}
+
+@focus {
+
+}
+
+@disabled {
+
+}

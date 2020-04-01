@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Platzi Food</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body class="min-h-screen bg-gray-100">
+
+    <nav class="bg-secondary fixed z-10 w-full" x-data="{ open: false }">
+
+        <div class="px-2 mb-2 bg-secondary text-white flex justify-between items-center">
+            <div>
+                <img class="h-8 py-1" src="./images/logo.svg" alt="Logo">
+            </div>
+            <div class="text-4xl cursor-pointer" @click="open = true">&equiv;</div>
+        </div>
+
+        <div @click.away="open = false" x-show.transition.duration.600ms="open">
+
+            <div class="flex items-center justify-end mx-2">
+                <input type="text" class="form-control w-full md:w-1/3" placeholder="Search...">
+                <button class="btn mx-1">Search</button>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main class="">
+        <div class="h-56 md:h-100 bg-cover bg-no-repeat bg-center" style="background-image: url(https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);">
+            
+        </div>
+    </main>
+
+    <div class="mx-4 my-8 md:flex container mx-auto p-6">
+
+        <div class="mt-4 md:w-1/2 md:flex md:bg-white md:rounded-lg mx-2">
+            <div>
+                <img 
+                 class="rounded-lg w-full md:rounded-r-none h-56 object-cover"
+                 src="https://images.unsplash.com/photo-1567446991015-48a7a6d17ec6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80&h=500&w=500" 
+                 alt="Hamburguer"
+                >
+            </div>
+            <div class="bg-white md:bg-transparent -mt-5 md:mt-1 mx-3 md:p-0 p-2 rounded-lg shadow-lg md:shadow-none relative md:w-full">
+                <h2 class="text-xl uppercase font-semibold tracking-tight text-gray-700 md:text-lg">Cheese burguer</h2>
+                <p class="text-gray-700 leading-snug">Smoked Cheese burguer</p>
+                <div class="text-sm mt-2 text-gray-600 font-semibold">USD $5</div>
+                <div class="text-xs mt-2 text-yellow-700">&starf;&starf;&starf;&starf;&star; / 36 reviews</div>
+            </div>
+        </div>
+
+        <div class="mt-4 md:w-1/2 md:flex md:bg-white md:rounded-lg mx-2">
+            <div>
+                <img 
+                 class="rounded-lg w-full md:rounded-r-none h-56 object-cover"
+                 src="https://images.unsplash.com/photo-1567446991015-48a7a6d17ec6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80&h=500&w=500" 
+                 alt="Hamburguer"
+                >
+            </div>
+            <div class="bg-white md:bg-transparent -mt-5 md:mt-1 mx-3 md:p-0 p-2 rounded-lg shadow-lg md:shadow-none relative md:w-full">
+                <h2 class="text-xl uppercase font-semibold tracking-tight text-gray-700 md:text-lg">Cheese burguer</h2>
+                <p class="text-gray-700 leading-snug">Smoked Cheese burguer</p>
+                <div class="text-sm mt-2 text-gray-600 font-semibold">USD $5</div>
+                <div class="text-xs mt-2 text-yellow-700">&starf;&starf;&starf;&starf;&star; / 36 reviews</div>
+            </div>
+        </div>
+
+    </div>
+
+    <form action="" class="mx-2 container mx-auto p-6">
+        
+        <div class="my-2">
+            <div>Name</div>
+            <input type="text" class="form-control placeholder-gray-500" placeholder="name">
+        </div>
+
+        <div class="my-2">
+            <div>Email</div>
+            <input type="text" class="form-control placeholder-gray-500" placeholder="email">
+        </div>
+
+        <div class="my-2">
+            <div>Comment</div>
+            <textarea name="comment" class="form-control placeholder-gray-500" id="" rows="10"></textarea>
+        </div>
+
+        <button class="btn">Send</button>
+
+    </form>
+
+
+    <footer class=" bottom-0 bg-secondary w-full text-white md:flex md:flex-row-reverse md:justify-around md:items-start">
+
+
+        <div class="mt-4 ml-8 p-4 md:p-0">
+            <div class="hover:text-primary cursor-pointer">Facebook</div>
+            <div class="hover:text-primary cursor-pointer">Twitter</div>
+            <div class="hover:text-primary cursor-pointer">Instagram</div>
+        </div>
+
+        <ul class="mt-4 ml-8 md:mb-4 p-4 md:p-0 md:list-disc">
+            <li>Soporte</li>
+            <li>Acerca de nosotros</li>
+            <li>Registro</li>
+            <li>Privacidad</li>
+        </ul>
+
+
+    </footer>
+
+
+    
+</body>
+</html>
